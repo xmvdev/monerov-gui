@@ -446,7 +446,7 @@ Item {
                         font.pixelSize: 14
                         font.bold: false
                         color: "white"
-                        text: qsTr("Amount to receive") + " (XMR)"
+                        text: qsTr("Amount to receive") + " (XMV)"
                         themeTransition: false
                     }
 

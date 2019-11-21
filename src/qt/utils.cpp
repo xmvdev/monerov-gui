@@ -63,7 +63,7 @@ QString getAccountName(){
     if (accountName.isEmpty())
         accountName = qgetenv("USERNAME"); // Windows
     if (accountName.isEmpty())
-        accountName = "My monero Account";
+        accountName = "My monerov Account";
     return accountName;
 }
 
@@ -72,10 +72,10 @@ QString xdgMime(QApplication &app){
     return QString(
         "[Desktop Entry]\n"
         "Name=Monero GUI\n"
-        "GenericName=Monero-GUI\n"
-        "X-GNOME-FullName=Monero-GUI\n"
-        "Comment=Monero GUI\n"
-        "Keywords=Monero;\n"
+        "GenericName=Monerov-GUI\n"
+        "X-GNOME-FullName=Monerov-GUI\n"
+        "Comment=Monerov GUI\n"
+        "Keywords=Monerov;\n"
         "Exec=%1 %u\n"
         "Terminal=false\n"
         "Type=Application\n"

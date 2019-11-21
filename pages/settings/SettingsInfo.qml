@@ -97,7 +97,7 @@ Rectangle {
             MoneroComponents.TextBlock {
                 id: guiMoneroVersion
                 font.pixelSize: 14
-                text: qsTr("Embedded Monero version: ") + translationManager.emptyString
+                text: qsTr("Embedded Monerov version: ") + translationManager.emptyString
             }
 
             MoneroComponents.TextBlock {
@@ -370,7 +370,7 @@ Rectangle {
             onClicked: {
                 var data = "";
                 data += "GUI version: " + Version.GUI_VERSION + " (Qt " + qtRuntimeVersion + ")";
-                data += "\nEmbedded Monero version: " + Version.GUI_MONERO_VERSION;
+                data += "\nEmbedded Monerov version: " + Version.GUI_MONERO_VERSION;
                 data += "\nWallet path: ";
 
                 var wallet_path = walletPath();
