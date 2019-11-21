@@ -1346,7 +1346,7 @@ ApplicationWindow {
         id: persistentSettings
         fileName: {
             if(isTails && tailsUsePersistence)
-                return homePath + "/Persistent/Monero/monero-core.conf";
+                return homePath + "/Persistent/Monerov/monerov-core.conf";
             return "";
         }
 
@@ -2059,11 +2059,11 @@ ApplicationWindow {
     function getDefaultDaemonRpcPort(networkType) {
         switch (networkType) {
             case NetworkType.STAGENET:
-                return 38081;
+                return 39281;
             case NetworkType.TESTNET:
-                return 28081;
+                return 29281;
             default:
-                return 18081;
+                return 19281;
         }
     }
 
