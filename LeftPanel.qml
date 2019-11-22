@@ -576,30 +576,6 @@ Rectangle {
                 anchors.leftMargin: 16
             }
 
-            // ------------- Shared RingDB tab ---------------
-            MoneroComponents.MenuButton {
-                id: sharedringdbButton
-                visible: appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Shared RingDB") + translationManager.emptyString
-                symbol: qsTr("G") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: advancedButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = sharedringdbButton
-                    panel.sharedringdbClicked()
-                }
-            }
-
-            MoneroComponents.MenuButtonDivider {
-                visible: sharedringdbButton.present && appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-            }
-
             // ------------- Sign/verify tab ---------------
             MoneroComponents.MenuButton {
                 id: signButton

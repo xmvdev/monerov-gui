@@ -124,7 +124,7 @@ void WalletKeysFilesModel::findWallets(const QString &moneroAccountsDir)
                 address = _address;
                 if(address.startsWith("5") || address.startsWith("7")){
                     networkType = NetworkType::STAGENET;
-                } else if(address.startsWith("9") || address.startsWith("B")){
+                } else if(address.startsWith("Xt")) {
                     networkType = NetworkType::TESTNET;
                 }
             }

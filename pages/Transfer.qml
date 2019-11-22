@@ -251,7 +251,7 @@ Rectangle {
                   } else if (persistentSettings.nettype == NetworkType.STAGENET){
                       return "Xv.. / Xs..";
                   } else if(persistentSettings.nettype == NetworkType.TESTNET){
-                      return "Xt.. / Xx..";
+                      return "Xt.. / Xz..";
                   }
               }
               wrapMode: Text.WrapAnywhere
@@ -479,17 +479,6 @@ Rectangle {
         GridLayout {
             visible: persistentSettings.transferShowAdvanced && appWindow.walletMode >= 2
             columns: 6
-
-            StandardButton {
-                id: sweepUnmixableButton
-                text: qsTr("Sweep Unmixable") + translationManager.emptyString
-                enabled : pageRoot.enabled
-                small: true
-                onClicked: {
-                    console.log("Transfer: sweepUnmixableClicked")
-                    root.sweepUnmixableClicked()
-                }
-            }
 
             StandardButton {
                 id: saveTxButton

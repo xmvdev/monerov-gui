@@ -174,7 +174,7 @@ Rectangle {
                 id: networkTypeModel
                 ListElement {column1: "Mainnet"; column2: ""; nettype: "mainnet"}
                 ListElement {column1: "Testnet"; column2: ""; nettype: "testnet"}
-                ListElement {column1: "Stagenet"; column2: ""; nettype: "stagenet"}
+                //ListElement {column1: "Stagenet"; column2: ""; nettype: "stagenet"}
             }
 
             GridLayout {
