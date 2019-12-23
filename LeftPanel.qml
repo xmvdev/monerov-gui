@@ -528,30 +528,6 @@ Rectangle {
                 anchors.leftMargin: 16
             }
 
-            // ------------- Mining tab ---------------
-            MoneroComponents.MenuButton {
-                id: miningButton
-                visible: !isAndroid && !isIOS && appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                text: qsTr("Mining") + translationManager.emptyString
-                symbol: qsTr("M") + translationManager.emptyString
-                dotColor: "#FFD781"
-                under: advancedButton
-                onClicked: {
-                    parent.previousButton.checked = false
-                    parent.previousButton = miningButton
-                    panel.miningClicked()
-                }
-            }
-
-            MoneroComponents.MenuButtonDivider {
-                visible: miningButton.present && appWindow.walletMode >= 2
-                anchors.left: parent.left
-                anchors.right: parent.right
-                anchors.leftMargin: 16
-            }
-
             // ------------- TxKey tab ---------------
             MoneroComponents.MenuButton {
                 id: txkeyButton
