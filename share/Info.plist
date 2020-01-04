@@ -18,13 +18,13 @@
   <string>????</string>
 
   <key>CFBundleExecutable</key>
-  <string>monero-wallet-gui</string>
+  <string>monerov-wallet-gui</string>
   
   <key>CFBundleName</key>
-  <string>Monero GUI</string>
+  <string>MoneroV GUI</string>
 
   <key>CFBundleIdentifier</key>
-  <string>org.monero-project.monero-wallet-gui</string>
+  <string>online.monerov.monerov-wallet-gui</string>
 
   <key>NSSupportsAutomaticGraphicsSwitching</key>
   <true/>
@@ -39,7 +39,7 @@
       <string>monero Handler</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>monero</string>
+        <string>monerov</string>
       </array>
     </dict>
     <dict>
@@ -47,7 +47,7 @@
       <string>moneroseed Handler</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>moneroseed</string>
+        <string>monerovseed</string>
       </array>
     </dict>
   </array>
